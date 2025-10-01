@@ -1,7 +1,7 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split(' ');
 
-let A = parseInt(input[0]);
-let B = parseInt(input[1]);
+let A = parseFloat(input[0]);
+let B = parseFloat(input[1]);
 
-console.log((A+B) + " " + ((A+B)/2));
+console.log((A+B) + " " + ((A+B)/2).toFixed(1));
